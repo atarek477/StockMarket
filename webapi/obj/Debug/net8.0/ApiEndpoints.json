@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "webapi.Controllers.StockController",
+    "Method": "Create",
+    "RelativePath": "api/stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockRequest",
+        "Type": "webapi.dto.StockRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.Controllers.StockController",
     "Method": "GetById",
     "RelativePath": "api/stock/{id}",
     "HttpMethod": "GET",

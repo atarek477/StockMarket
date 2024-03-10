@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapi",
+    "\\webapi\\Controllers",
+    "\\webapi\\data",
+    "\\webapi\\dto",
+    "\\webapi\\mapper",
+    "\\webapi\\Migrations",
+    "\\webapi\\model",
+    "\\webapi\\Properties"
+  ],
+  "PreviewInSolutionExplorer": false
+}

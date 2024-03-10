@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using webapi.data;
+using webapi.dto;
+using webapi.mapper;
 
 namespace webapi.Controllers
 {
@@ -19,7 +21,7 @@ namespace webapi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var stocks = _dbContext.stocks.ToList();
+            var stocks = _dbContext.stocks.ToList().Select(s=>s.ToStockDTO());
             return Ok(stocks);
 
         }
@@ -31,8 +33,26 @@ namespace webapi.Controllers
 
             if (stock == null) { return NotFound(); }
 
-            return Ok(stock);
+            return Ok(stock.ToStockDTO());
                 
         }
+
+
+
+        [HttpPost]
+
+        public IActionResult Create([FromBody] StockRequestDto stockRequest)
+        {
+            var stock = stockRequest.ConvertToStock();
+            _dbContext.Add(stock);
+            _dbContext.SaveChanges();
+
+
+           
+
+            return CreatedAtAction(nameof(GetById),new {Id= stock.Id},stock.ToStockDTO() );
+
+        }
+
     }
 }
