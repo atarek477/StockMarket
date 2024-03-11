@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using webapi.api;
 
 namespace webapi.NewFolder
 {
@@ -20,7 +21,7 @@ namespace webapi.NewFolder
 
         public long MarketCap { get; set; }
 
-
+        public List<Comment> comments { get; set; }
 
 
     }

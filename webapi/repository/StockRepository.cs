@@ -40,16 +40,21 @@ namespace webapi.repository
 
         public async Task<List<Stock>> GetAllAysnc()
         {
-            return await _dbContext.stocks.ToListAsync();
+            return await _dbContext.stocks.Include(c=>c.Comments).ToListAsync();
         }
 
         public async Task<Stock?> GetAysncById(int id)
         {
-            var stock = await _dbContext.stocks.FindAsync(id);
+            var stock = await _dbContext.stocks.Include(c => c.Comments).FirstOrDefaultAsync(x => x.Id == id);
 
             if (stock == null) { return null; }
 
             return stock;
+        }
+
+        public async Task<bool> StockExist(int id)
+        {
+            return await _dbContext.stocks.AnyAsync(s => s.Id == id);
         }
 
         public async Task<Stock?> UpdateAsync(int id, StockRequestDto stockRequest)

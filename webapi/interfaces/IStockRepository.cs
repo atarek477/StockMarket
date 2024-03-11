@@ -13,5 +13,7 @@ namespace webapi.interfaces
         Task<Stock?> UpdateAsync(int id,StockRequestDto stockRequest );
         Task<Stock?> DeleteAsync(int id);
 
+        Task<bool> StockExist(int id);
+
     }
 }

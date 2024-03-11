@@ -17,7 +17,15 @@ namespace webapi.mapper
                 stockId= comment.stockId
             };
         }
-
+        public static Comment ToComment(this CommentRequestDto comment, int stockId)
+        {
+            return new Comment
+            {
+                Content = comment.Content,
+                Title = comment.Title,
+                stockId = stockId
+            };
+        }
 
     }
 }

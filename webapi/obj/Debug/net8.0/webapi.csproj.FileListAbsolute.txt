@@ -271,3 +271,7 @@ D:\projects\StockMarket\webapi\obj\Debug\net8.0\refint\webapi.dll
 D:\projects\StockMarket\webapi\obj\Debug\net8.0\webapi.pdb
 D:\projects\StockMarket\webapi\obj\Debug\net8.0\webapi.genruntimeconfig.cache
 D:\projects\StockMarket\webapi\obj\Debug\net8.0\ref\webapi.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

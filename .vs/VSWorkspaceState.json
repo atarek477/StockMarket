@@ -2,14 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\webapi",
-    "\\webapi\\Controllers",
     "\\webapi\\data",
     "\\webapi\\dto",
     "\\webapi\\mapper",
-    "\\webapi\\Migrations",
     "\\webapi\\model",
     "\\webapi\\Properties"
   ],
-  "SelectedNode": "\\webapi\\Controllers\\StockController.cs",
+  "SelectedNode": "\\webapi.sln",
   "PreviewInSolutionExplorer": false
 }
