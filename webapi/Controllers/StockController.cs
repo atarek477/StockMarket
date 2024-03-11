@@ -54,5 +54,52 @@ namespace webapi.Controllers
 
         }
 
+
+
+        [HttpPut]
+        [Route("{id}")]
+
+        public IActionResult Update([FromRoute] int id, [FromBody] StockRequestDto stockRequest)
+        {
+            var stock = _dbContext.stocks.FirstOrDefault(x => x.Id == id);
+
+            if (stock == null) { return NotFound(); }
+
+
+            stock.Symbol = stockRequest.Symbol;
+            stock.CompanyName = stockRequest.CompanyName;
+            stock.Purshase = stockRequest.Purshase;
+            stock.Industry = stockRequest.Industry;
+            stock.MarketCap = stockRequest.MarketCap;
+            stock.LastDiv = stockRequest.LastDiv;
+
+            _dbContext.SaveChanges();
+
+
+            return Ok(stock.ToStockDTO());
+
+        }
+
+
+        [HttpDelete]
+        [Route("{id}")]
+
+        public IActionResult Delete([FromRoute] int id)
+        {
+            var stock = _dbContext.stocks.FirstOrDefault(x => x.Id == id);
+
+            if (stock == null) { return NotFound(); }
+
+
+
+            _dbContext.stocks.Remove(stock);
+            _dbContext.SaveChanges();
+
+
+            return NoContent();
+
+        }
+
+
     }
 }

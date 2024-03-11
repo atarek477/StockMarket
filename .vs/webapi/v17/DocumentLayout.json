@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\projects\\webapi\\",
+  "WorkspaceRootPath": "D:\\projects\\StockMarket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\Controllers\\StockController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Controllers\\StockController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\model\\Stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\model\\Stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\model\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\model\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\Migrations\\20240310194928_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Migrations\\20240310194928_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\migrations\\20240310194928_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240310194928_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\model\\Comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\model\\Comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\model\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\data\\ApplicationDBContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\data\\ApplicationDBContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\projects\\webapi\\webapi\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +46,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Stock.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\model\\Stock.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\model\\Stock.cs",
               "RelativeDocumentMoniker": "webapi\\model\\Stock.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\model\\Stock.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\model\\Stock.cs",
               "RelativeToolTip": "webapi\\model\\Stock.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAkwBcAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -62,14 +62,18 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StockController.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\Controllers\\StockController.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "webapi\\Controllers\\StockController.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\Controllers\\StockController.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Controllers\\StockController.cs",
               "RelativeToolTip": "webapi\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAcwBkAAAAYAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAuwEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T20:18:19.687Z",
               "EditorCaption": ""
@@ -78,9 +82,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "webapi.http",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\webapi.http",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\webapi.http",
               "RelativeDocumentMoniker": "webapi\\webapi.http",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\webapi.http",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\webapi.http",
               "RelativeToolTip": "webapi\\webapi.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
@@ -90,9 +94,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "20240310194928_InitialCreate.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\Migrations\\20240310194928_InitialCreate.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Migrations\\20240310194928_InitialCreate.cs",
               "RelativeDocumentMoniker": "webapi\\Migrations\\20240310194928_InitialCreate.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\Migrations\\20240310194928_InitialCreate.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Migrations\\20240310194928_InitialCreate.cs",
               "RelativeToolTip": "webapi\\Migrations\\20240310194928_InitialCreate.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,9 +106,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\model\\Comment.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\model\\Comment.cs",
               "RelativeDocumentMoniker": "webapi\\model\\Comment.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\model\\Comment.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\model\\Comment.cs",
               "RelativeToolTip": "webapi\\model\\Comment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,9 +118,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\data\\ApplicationDBContext.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\data\\ApplicationDBContext.cs",
               "RelativeDocumentMoniker": "webapi\\data\\ApplicationDBContext.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\data\\ApplicationDBContext.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\data\\ApplicationDBContext.cs",
               "RelativeToolTip": "webapi\\data\\ApplicationDBContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,9 +130,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\Program.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Program.cs",
               "RelativeDocumentMoniker": "webapi\\Program.cs",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\Program.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Program.cs",
               "RelativeToolTip": "webapi\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,9 +142,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\appsettings.json",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\appsettings.json",
               "RelativeDocumentMoniker": "webapi\\appsettings.json",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\appsettings.json",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\appsettings.json",
               "RelativeToolTip": "webapi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -150,17 +154,13 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\projects\\webapi\\webapi\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "webapi\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\projects\\webapi\\webapi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Properties\\launchSettings.json",
               "RelativeToolTip": "webapi\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-10T18:45:36.205Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

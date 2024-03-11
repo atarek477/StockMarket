@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BLURAY\\Desktop\\webapi\\webapi\\webapi.csproj": {}
+    "D:\\projects\\StockMarket\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BLURAY\\Desktop\\webapi\\webapi\\webapi.csproj": {
+    "D:\\projects\\StockMarket\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BLURAY\\Desktop\\webapi\\webapi\\webapi.csproj",
+        "projectUniqueName": "D:\\projects\\StockMarket\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\BLURAY\\Desktop\\webapi\\webapi\\webapi.csproj",
+        "projectPath": "D:\\projects\\StockMarket\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Users\\BLURAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BLURAY\\Desktop\\webapi\\webapi\\obj\\",
+        "outputPath": "D:\\projects\\StockMarket\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BLURAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
