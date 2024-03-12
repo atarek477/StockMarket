@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\dto\\stockrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\dto\\stockrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\dto\\commentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\dto\\commentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\dto\\commentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|solutionrelative:webapi\\dto\\commentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DF3C631-D96B-4693-9380-DEE7AD813E95}|webapi\\webapi.csproj|d:\\projects\\stockmarket\\webapi\\dto\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,15 +74,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CommentRepository.cs",
-              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\repository\\CommentRepository.cs",
-              "RelativeDocumentMoniker": "webapi\\repository\\CommentRepository.cs",
-              "ToolTip": "D:\\projects\\StockMarket\\webapi\\repository\\CommentRepository.cs",
-              "RelativeToolTip": "webapi\\repository\\CommentRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAAAbAAAA",
+              "DocumentIndex": 2,
+              "Title": "StockRequestDto.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\dto\\StockRequestDto.cs",
+              "RelativeDocumentMoniker": "webapi\\dto\\StockRequestDto.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\dto\\StockRequestDto.cs*",
+              "RelativeToolTip": "webapi\\dto\\StockRequestDto.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:07:15.051Z",
+              "WhenOpened": "2024-03-12T13:06:13.197Z",
               "EditorCaption": ""
             },
             {
@@ -89,14 +93,14 @@
               "RelativeDocumentMoniker": "webapi\\Controllers\\CommentController.cs",
               "ToolTip": "D:\\projects\\StockMarket\\webapi\\Controllers\\CommentController.cs*",
               "RelativeToolTip": "webapi\\Controllers\\CommentController.cs*",
-              "ViewState": "AQIAAEUAAAAAAAAAAADwv1AAAABBAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAkwFgAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T14:23:44.699Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CommentMapper.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\mapper\\CommentMapper.cs",
               "RelativeDocumentMoniker": "webapi\\mapper\\CommentMapper.cs",
@@ -104,12 +108,11 @@
               "RelativeToolTip": "webapi\\mapper\\CommentMapper.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAADwvxYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:33:03.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:33:03.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ICommentRepository.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\interfaces\\ICommentRepository.cs",
               "RelativeDocumentMoniker": "webapi\\interfaces\\ICommentRepository.cs",
@@ -117,25 +120,24 @@
               "RelativeToolTip": "webapi\\interfaces\\ICommentRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:06:44.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:06:44.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "StockController.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "webapi\\Controllers\\StockController.cs",
-              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Controllers\\StockController.cs",
-              "RelativeToolTip": "webapi\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAA8wDgAAAAAAAAA",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\Controllers\\StockController.cs*",
+              "RelativeToolTip": "webapi\\Controllers\\StockController.cs*",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T20:18:19.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "StockRepository.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\repository\\StockRepository.cs",
               "RelativeDocumentMoniker": "webapi\\repository\\StockRepository.cs",
@@ -143,12 +145,11 @@
               "RelativeToolTip": "webapi\\repository\\StockRepository.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAYwD0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:05:14.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T13:05:14.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CommentDto.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\dto\\CommentDto.cs",
               "RelativeDocumentMoniker": "webapi\\dto\\CommentDto.cs",
@@ -156,25 +157,36 @@
               "RelativeToolTip": "webapi\\dto\\CommentDto.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:29:28.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:29:28.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "CommentRequestDto.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\dto\\CommentRequestDto.cs",
               "RelativeDocumentMoniker": "webapi\\dto\\CommentRequestDto.cs",
-              "ToolTip": "D:\\projects\\StockMarket\\webapi\\dto\\CommentRequestDto.cs",
-              "RelativeToolTip": "webapi\\dto\\CommentRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\dto\\CommentRequestDto.cs*",
+              "RelativeToolTip": "webapi\\dto\\CommentRequestDto.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T21:24:03.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\repository\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "webapi\\repository\\CommentRepository.cs",
+              "ToolTip": "D:\\projects\\StockMarket\\webapi\\repository\\CommentRepository.cs",
+              "RelativeToolTip": "webapi\\repository\\CommentRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:07:15.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IStockRepository.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\interfaces\\IStockRepository.cs",
               "RelativeDocumentMoniker": "webapi\\interfaces\\IStockRepository.cs",
@@ -182,12 +194,11 @@
               "RelativeToolTip": "webapi\\interfaces\\IStockRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:02:01.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T13:02:01.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\Program.cs",
               "RelativeDocumentMoniker": "webapi\\Program.cs",
@@ -195,12 +206,11 @@
               "RelativeToolTip": "webapi\\Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T19:05:39.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-10T19:05:39.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StockMapper.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\mapper\\StockMapper.cs",
               "RelativeDocumentMoniker": "webapi\\mapper\\StockMapper.cs",
@@ -208,12 +218,11 @@
               "RelativeToolTip": "webapi\\mapper\\StockMapper.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:39:41.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T13:39:41.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "webapi.http",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\webapi.http",
               "RelativeDocumentMoniker": "webapi\\webapi.http",
@@ -221,12 +230,11 @@
               "RelativeToolTip": "webapi\\webapi.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-11T20:13:36.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T20:13:36.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "StockDto.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\dto\\StockDto.cs",
               "RelativeDocumentMoniker": "webapi\\dto\\StockDto.cs",
@@ -234,12 +242,11 @@
               "RelativeToolTip": "webapi\\dto\\StockDto.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAgwBsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:32:26.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:32:26.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Comment.cs",
               "DocumentMoniker": "D:\\projects\\StockMarket\\webapi\\model\\Comment.cs",
               "RelativeDocumentMoniker": "webapi\\model\\Comment.cs",
@@ -247,8 +254,7 @@
               "RelativeToolTip": "webapi\\model\\Comment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:29:44.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T14:29:44.436Z"
             }
           ]
         }

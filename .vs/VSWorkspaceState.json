@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\webapi",
+    "\\webapi\\Controllers",
     "\\webapi\\data",
     "\\webapi\\dto",
     "\\webapi\\mapper",

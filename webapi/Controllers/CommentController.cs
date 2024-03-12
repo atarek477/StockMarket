@@ -24,6 +24,8 @@ namespace webapi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
             var comments = await _commentRepository.GetAllAsync();
             var commentDto = comments.Select(s => s.ToCommentDto());
             return Ok(commentDto);
@@ -31,9 +33,11 @@ namespace webapi.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
             var comment = await _commentRepository.GetAsyncById(id);
 
             if (comment == null) { return NotFound(); }
@@ -43,10 +47,12 @@ namespace webapi.Controllers
         }
 
 
-        [HttpPost("{id}")]
+        [HttpPost("{id:int}")]
 
         public async Task<IActionResult> Create([FromRoute] int id, CommentRequestDto commentRequestDto)
         {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
             if (!await _stockRepository.StockExist(id))
             {
                 return BadRequest("there no stock");
@@ -60,9 +66,11 @@ namespace webapi.Controllers
 
 
         [HttpPut]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] CommentRequestDto commmentRequest)
         {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
             var comment = await _commentRepository.UpdateAsync(id, commmentRequest);
 
             if (comment == null) { return NotFound(); }
@@ -75,9 +83,11 @@ namespace webapi.Controllers
 
 
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+
             var comment = await _commentRepository.DeleteAsync(id);
 
             if (comment == null) { return NotFound(); }
