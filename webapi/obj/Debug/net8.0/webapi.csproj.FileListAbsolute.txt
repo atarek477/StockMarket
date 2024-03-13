@@ -275,3 +275,10 @@ D:\projects\StockMarket\webapi\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\projects\StockMarket\webapi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\projects\StockMarket\webapi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

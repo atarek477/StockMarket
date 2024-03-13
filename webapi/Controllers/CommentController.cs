@@ -22,6 +22,7 @@ namespace webapi.Controllers
         }
 
         [HttpGet]
+
         public async Task<IActionResult> GetAll()
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }

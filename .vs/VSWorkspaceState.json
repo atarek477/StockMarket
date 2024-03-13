@@ -7,8 +7,9 @@
     "\\webapi\\dto",
     "\\webapi\\mapper",
     "\\webapi\\model",
-    "\\webapi\\Properties"
+    "\\webapi\\Properties",
+    "\\webapi\\repository"
   ],
-  "SelectedNode": "\\webapi.sln",
+  "SelectedNode": "\\webapi\\repository\\StockRepository.cs",
   "PreviewInSolutionExplorer": false
 }

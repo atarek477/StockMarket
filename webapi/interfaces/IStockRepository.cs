@@ -1,12 +1,13 @@
 ﻿using webapi.api;
 using webapi.dto;
+using webapi.helper;
 
 namespace webapi.interfaces
 {
     public interface IStockRepository
     {
 
-        Task<List<Stock>> GetAllAysnc();
+        Task<List<Stock>> GetAllAysnc(QueryObject query);
         Task<Stock?> GetAysncById(int id);
 
         Task<Stock> CreateAsync(Stock stock);

@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using webapi.data;
 using webapi.dto;
+using webapi.helper;
 using webapi.interfaces;
 using webapi.mapper;
 
@@ -22,11 +24,12 @@ namespace webapi.Controllers
 
         }
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [Authorize]
+        public async Task<IActionResult> GetAll([FromQuery] QueryObject query)
         {
             if(!ModelState.IsValid) { return BadRequest(ModelState); }
 
-            var stocks = await _stockRepo.GetAllAysnc();
+            var stocks = await _stockRepo.GetAllAysnc(query);
             var stockDto= stocks.Select(s=>s.ToStockDTO());
             return Ok(stocks);
 

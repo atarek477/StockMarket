@@ -2,6 +2,7 @@
 using webapi.api;
 using webapi.data;
 using webapi.dto;
+using webapi.helper;
 using webapi.interfaces;
 using webapi.mapper;
 
@@ -38,9 +39,26 @@ namespace webapi.repository
             return stock;
         }
 
-        public async Task<List<Stock>> GetAllAysnc()
+        public async Task<List<Stock>> GetAllAysnc(QueryObject query)
         {
-            return await _dbContext.stocks.Include(c=>c.Comments).ToListAsync();
+           var stocks =_dbContext.stocks.Include(c=>c.Comments).AsQueryable();
+            if (!string.IsNullOrWhiteSpace(query.Symbol)) 
+            { stocks = stocks.Where(s => s.Symbol.Contains(query.Symbol)); }
+            if (!string.IsNullOrWhiteSpace(query.CompanyName))
+            { stocks = stocks.Where(s => s.CompanyName.Contains(query.CompanyName)); }
+
+            if (!string.IsNullOrWhiteSpace(query.SortBy))
+            {
+                if (query.SortBy.Equals("Symbol", StringComparison.OrdinalIgnoreCase))
+                {
+                    stocks= query.IsDesc?stocks.OrderByDescending(s=>s.Symbol):stocks.OrderBy(s=>s.Symbol);
+                }
+            
+            }
+
+            var SkipNumbr = (query.PageNumber - 1) * query.PageSize;
+
+            return await stocks.Skip(SkipNumbr).Take(query.PageSize).ToListAsync();
         }
 
         public async Task<Stock?> GetAysncById(int id)
