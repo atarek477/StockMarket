@@ -1,4 +1,6 @@
-﻿namespace webapi.api
+﻿using webapi.model;
+
+namespace webapi.api
 {
     public class Comment
     {
@@ -8,5 +10,8 @@
         public DateTime CreateOn { get; set; }
         public int? stockId { get; set; }
         public Stock? stock { get; set; }
+
+        public string AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }

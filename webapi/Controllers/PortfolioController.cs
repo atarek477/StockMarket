@@ -41,5 +41,57 @@ namespace webapi.Controllers
         }
 
 
-    }
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> AddPortfolio(string symbol)
+        {
+            var username = User.GetUsername();
+            var appUser = await _userManager.FindByNameAsync(username);
+            var stock = await _stockRepo.GetAysncBySymbol(symbol);
+             if (stock == null) { BadRequest("stock not found"); }
+
+            var portfolioVal = await _portfolioRepo.GetUserPortfolio(appUser);
+            if (portfolioVal.Any(s=>s.Symbol.ToLower()==symbol.ToLower())){ 
+                BadRequest("stock is the same");
+            }
+            var portfolioModel = new Portfolio
+            {
+                stockId = stock.Id,
+                appuserId = appUser.Id
+            };
+
+            await _portfolioRepo.CreateAsync(portfolioModel);
+
+            if (portfolioModel == null)
+            {
+                return StatusCode(500, "Could not create");
+            }
+            else
+            {
+                return Created();
+            }
+
+        }
+
+
+        [HttpDelete]
+        [Authorize]
+        public async Task<IActionResult> DeletePortfolio(string symbol)
+        {
+            var username = User.GetUsername();
+            var appUser = await _userManager.FindByNameAsync(username);
+            var userPortfolio = await _portfolioRepo.GetUserPortfolio(appUser);
+            var filter = userPortfolio.Where(x => x.Symbol.ToLower() == symbol.ToLower());
+            if (filter.Count() == 1)
+            {
+                await _portfolioRepo.DeletePortfolio(appUser, symbol);
+
+            }
+            else { return BadRequest("stock doesnt exit with user"); }
+
+            return Ok();
+        }
+
+
+        }
 }

@@ -51,13 +51,13 @@ namespace webapi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "77263d93-afc9-4c64-aa80-7f57046df851",
+                            Id = "b2de7568-be94-4258-a5e6-4ce7dbd31676",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "a7d39dfa-c0b4-4790-8cc6-7f80907f2b75",
+                            Id = "c13983eb-fd07-4bb6-9958-674998053469",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -177,6 +177,10 @@ namespace webapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -192,6 +196,8 @@ namespace webapi.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
 
                     b.HasIndex("stockId");
 
@@ -365,9 +371,17 @@ namespace webapi.Migrations
 
             modelBuilder.Entity("webapi.api.Comment", b =>
                 {
+                    b.HasOne("webapi.model.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("webapi.api.Stock", "stock")
                         .WithMany("Comments")
                         .HasForeignKey("stockId");
+
+                    b.Navigation("AppUser");
 
                     b.Navigation("stock");
                 });

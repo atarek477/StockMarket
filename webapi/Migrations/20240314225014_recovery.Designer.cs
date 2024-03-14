@@ -12,8 +12,8 @@ using webapi.data;
 namespace webapi.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20240313135700_identity")]
-    partial class identity
+    [Migration("20240314225014_recovery")]
+    partial class recovery
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,6 +50,20 @@ namespace webapi.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "b2de7568-be94-4258-a5e6-4ce7dbd31676",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "c13983eb-fd07-4bb6-9958-674998053469",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -166,6 +180,10 @@ namespace webapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -181,6 +199,8 @@ namespace webapi.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
 
                     b.HasIndex("stockId");
 
@@ -286,6 +306,21 @@ namespace webapi.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("webapi.model.Portfolio", b =>
+                {
+                    b.Property<string>("appuserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("stockId")
+                        .HasColumnType("int");
+
+                    b.HasKey("appuserId", "stockId");
+
+                    b.HasIndex("stockId");
+
+                    b.ToTable("portfolios");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -339,9 +374,36 @@ namespace webapi.Migrations
 
             modelBuilder.Entity("webapi.api.Comment", b =>
                 {
+                    b.HasOne("webapi.model.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("webapi.api.Stock", "stock")
                         .WithMany("Comments")
                         .HasForeignKey("stockId");
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("stock");
+                });
+
+            modelBuilder.Entity("webapi.model.Portfolio", b =>
+                {
+                    b.HasOne("webapi.model.AppUser", "appUser")
+                        .WithMany("portfolios")
+                        .HasForeignKey("appuserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("webapi.api.Stock", "stock")
+                        .WithMany("portfolios")
+                        .HasForeignKey("stockId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("appUser");
 
                     b.Navigation("stock");
                 });
@@ -349,6 +411,13 @@ namespace webapi.Migrations
             modelBuilder.Entity("webapi.api.Stock", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("portfolios");
+                });
+
+            modelBuilder.Entity("webapi.model.AppUser", b =>
+                {
+                    b.Navigation("portfolios");
                 });
 #pragma warning restore 612, 618
         }

@@ -70,6 +70,11 @@ namespace webapi.repository
             return stock;
         }
 
+        public async Task<Stock?> GetAysncBySymbol(string symbol)
+        {
+            return await _dbContext.stocks.FirstOrDefaultAsync(s=>s.Symbol==symbol);
+        }
+
         public async Task<bool> StockExist(int id)
         {
             return await _dbContext.stocks.AnyAsync(s => s.Id == id);

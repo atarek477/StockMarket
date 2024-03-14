@@ -3,13 +3,11 @@
     "",
     "\\webapi",
     "\\webapi\\Controllers",
-    "\\webapi\\data",
     "\\webapi\\dto",
-    "\\webapi\\mapper",
+    "\\webapi\\Migrations",
     "\\webapi\\model",
-    "\\webapi\\Properties",
     "\\webapi\\repository"
   ],
-  "SelectedNode": "\\webapi\\dto\\CommentRequestDto.cs",
+  "SelectedNode": "\\webapi\\repository\\PortfolioRepository.cs",
   "PreviewInSolutionExplorer": false
 }
