@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using webapi.model;
 
 namespace webapi.api
 {
@@ -22,6 +23,9 @@ namespace webapi.api
 
 
         public List<Comment> Comments { get; set; }=new List<Comment>();
+
+
+        public List<Portfolio> portfolios { get; set; } = new List<Portfolio>();
 
 
 

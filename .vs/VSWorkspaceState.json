@@ -10,6 +10,6 @@
     "\\webapi\\Properties",
     "\\webapi\\repository"
   ],
-  "SelectedNode": "\\webapi\\repository\\StockRepository.cs",
+  "SelectedNode": "\\webapi\\dto\\CommentRequestDto.cs",
   "PreviewInSolutionExplorer": false
 }

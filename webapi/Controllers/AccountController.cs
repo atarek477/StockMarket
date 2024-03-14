@@ -10,7 +10,7 @@ namespace webapi.Controllers
 {
 
     [ApiController]
-    [Route("api/commend")]
+    [Route("api/user")]
     public class AccountController : ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;

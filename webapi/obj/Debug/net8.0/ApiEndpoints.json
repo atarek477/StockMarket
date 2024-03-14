@@ -84,35 +84,13 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.AccountController",
-    "Method": "Login",
-    "RelativePath": "api/commend/login",
-    "HttpMethod": "POST",
+    "ContainingType": "webapi.Controllers.PortfolioController",
+    "Method": "GetUserPortfolio",
+    "RelativePath": "api/portfolio",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDto",
-        "Type": "webapi.dto.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webapi.Controllers.AccountController",
-    "Method": "Resgister",
-    "RelativePath": "api/commend/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "registerDto",
-        "Type": "webapi.dto.RegisterDto",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -220,6 +198,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "webapi.dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.Controllers.AccountController",
+    "Method": "Resgister",
+    "RelativePath": "api/user/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "webapi.dto.RegisterDto",
         "IsRequired": true
       }
     ],
