@@ -1,0 +1,21 @@
+<button (click)="initNewProduct()">Create New product</button>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>discreption</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of Products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td><button (click)="editProduct(product)">Edit</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<app-edit-product
+  [product]="productToEdit"
+  (productUpdated)="updateProductList($event)"
+></app-edit-product>

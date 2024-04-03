@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using webapi.api;
 using webapi.dto;
+using webapi.extension;
 using webapi.interfaces;
 using webapi.mapper;
+using webapi.model;
 
 namespace webapi.Controllers
 {
@@ -15,10 +18,12 @@ namespace webapi.Controllers
 
         private readonly ICommentRepository _commentRepository;
         private readonly IStockRepository _stockRepository;
-        public CommentController(ICommentRepository commentRepository, IStockRepository stockRepository)
+        private readonly UserManager<AppUser> _userManager;
+        public CommentController(ICommentRepository commentRepository, IStockRepository stockRepository,UserManager<AppUser>userManager)
         {
             _commentRepository = commentRepository;
             _stockRepository = stockRepository;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -39,7 +44,9 @@ namespace webapi.Controllers
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
+
             var comment = await _commentRepository.GetAsyncById(id);
+         
 
             if (comment == null) { return NotFound(); }
 
@@ -54,11 +61,15 @@ namespace webapi.Controllers
         {
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
 
+            var user = User.GetUsername();
+            var appuser = await _userManager.FindByNameAsync(user);
+
             if (!await _stockRepository.StockExist(id))
             {
                 return BadRequest("there no stock");
             }
             var comment = commentRequestDto.ToComment(id);
+            comment.AppUserId = appuser.Id;
             await _commentRepository.CreateAsync(comment);
             return CreatedAtAction(nameof(GetById), new { Id = comment.Id }, comment.ToCommentDto());
 

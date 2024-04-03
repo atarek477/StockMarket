@@ -38,12 +38,12 @@ namespace webapi.repository
         public async Task<List<Comment>> GetAllAsync()
 
         {
-            return await _dbContext.comments.ToListAsync();
+            return await _dbContext.comments.Include(a=>a.AppUser).ToListAsync();
         }
 
         public async Task<Comment?> GetAsyncById(int id)
         {
-            var comment= await _dbContext.comments.FindAsync(id);
+            var comment= await _dbContext.comments.Include(a => a.AppUser).FirstOrDefaultAsync(x=>x.Id==id);
             if(comment == null) { return null; }
             return comment;
         }

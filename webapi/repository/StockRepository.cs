@@ -41,7 +41,7 @@ namespace webapi.repository
 
         public async Task<List<Stock>> GetAllAysnc(QueryObject query)
         {
-           var stocks =_dbContext.stocks.Include(c=>c.Comments).AsQueryable();
+           var stocks =_dbContext.stocks.Include(c=>c.Comments).ThenInclude(x=>x.AppUser).AsQueryable();
             if (!string.IsNullOrWhiteSpace(query.Symbol)) 
             { stocks = stocks.Where(s => s.Symbol.Contains(query.Symbol)); }
             if (!string.IsNullOrWhiteSpace(query.CompanyName))

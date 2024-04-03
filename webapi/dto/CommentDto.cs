@@ -9,6 +9,7 @@ namespace webapi.dto
         public string Content { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
         public DateTime CreateOn { get; set; }
+        public string CreatedBy { get; set; }
         public int? stockId { get; set; }
        
 

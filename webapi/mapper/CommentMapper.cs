@@ -14,6 +14,7 @@ namespace webapi.mapper
                 Content = comment.Content,
                 Title = comment.Title,
                 CreateOn = comment.CreateOn,
+                CreatedBy = comment.AppUser.UserName,
                 stockId= comment.stockId
             };
         }
