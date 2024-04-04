@@ -8,39 +8,12 @@ import { ProductService } from './services/product.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Frontend';
-  Products: product[] = [];
-  productToEdit?: product;
+  title = 'Frontend';;;
+ 
+  list: product[] = [];
+  constructor(private productService:ProductService) {}
 
-  constructor(private productservice: ProductService) {}
-
-  ngOnInit(): void {
-    this.productservice
-      .getProducts()
-      .subscribe((result: product[]) =>{
-        this.Products = result;
-        console.log('Products:', this.Products); 
-      },
-      error => {
-        console.error('Error fetching products:', error);
-      });
-
-  }
-
-  updateProductList(product: product[]) {
-    this.Products = product;
-  }
-
-  initNewProduct() {
-    this.productToEdit = new product();
-  }
-
-  editProduct(product: product) {
-    this.productToEdit = product;
-  }
-
-
-
+  
 
 }
 

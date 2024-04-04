@@ -1,21 +1,8 @@
-<button (click)="initNewProduct()">Create New product</button>
+<app-header></app-header>
 
-<table>
-  <thead>
-    <th>Name</th>
-    <th>discreption</th>
-    <th></th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let product of Products">
-      <td>{{ product.name }}</td>
-      <td>{{ product.description }}</td>
-      <td><button (click)="editProduct(product)">Edit</button></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+    <h1 class="text-center">hero app</h1>
+</div>
+<!-- <app-getproduct></app-getproduct> -->
 
-<app-edit-product
-  [product]="productToEdit"
-  (productUpdated)="updateProductList($event)"
-></app-edit-product>
+<router-outlet></router-outlet>

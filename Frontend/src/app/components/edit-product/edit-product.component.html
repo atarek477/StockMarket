@@ -1,15 +1,68 @@
-<div *ngIf="product">
-    <h2>{{ product.name }}</h2>
-    <div>
-      Name:
-      <input [(ngModel)]="product.name" placeholder="Name" />
-    </div>
-    <div>
-      Description:
-      <input [(ngModel)]="product.description" placeholder="Description" />
-    </div>
-  
-    <button (click)="updateProduct(product)" *ngIf="product.id">Save</button>
-    <button (click)="deleteProduct(product)" *ngIf="product.id">Delete</button>
-    <button (click)="createProduct(product)" *ngIf="!product.id">Create</button>
+<div class="container">
+    <h2>Add New Product</h2>
+    <form (ngSubmit)="create(newProduct)" routerLink="getProduct">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="newProduct.name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" name="description" [(ngModel)]="newProduct.description" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+
+<h1>{{user.name}}</h1>
+<p>{{user.age}}</p> 
+
+<input type="text" [(ngModel)]="newName">
+<button (click)="change()">update</button> 
+
+<img *ngIf="flag1==true" [src]="url" alt="">
+<button (click)="flag1=!flag1">toggle</button> 
+
+<div [ngSwitch]="colour">
+<p *ngSwitchCase="'red'"> this color is red </p>
+<p *ngSwitchCase="'blue'">this color is blue</p>
+<p></p>
+</div>
+
+<div [ngStyle]="{'background-color': user.color}">
+    <p > this color is red </p>
+    <p >this color is blue</p>
+    <p></p>
+    </div>
+    
+
+</div> -->
+
+

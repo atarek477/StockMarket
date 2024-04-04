@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>update product</h2>
+    
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="updateProduct.name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" name="description" [(ngModel)]="updateProduct.description" required></textarea>
+      </div>
+      <button (click)="update()" class="btn btn-primary">update</button>
+  </div>
